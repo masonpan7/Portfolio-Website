@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+    <nav id="desktop-nav"> 
+        <div class="logo">Mason Pan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mason Pan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class = "menu-link">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile" class = "section">
+        <div class="profile_pic-container">
+            <img src="./assets/profile-pic.png" alt="Mason Pan Profile Pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title"> Mason Pan</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Mason_Pan_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn Profile" 
+                class = "icon" 
+                onclick="location.href='https://www.linkedin.com/in/mason-pan-7673a8324/'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="GitHub Profile" 
+                class = "icon" 
+                onclick="location.href='https://github.com/masonpan7'"
+                />
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#about'"
+        />
+    </section>
+    <section id="about" class = "section">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container" style="transform: translateX(-40px);">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile Picture" 
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-conatiner">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                         src="./assets/experience.png"
+                         alt="Experience Icon" 
+                         class="icon"
+                         />
+                         <h3>Experience</h3>
+                         <p>2+ years<br> Software Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                         src="./assets/education.png"
+                         alt="Education Icon" 
+                         class="icon"
+                         />
+                         <h3>Education</h3>
+                         <p>Bachelors Degree - Computer Science<br> University of Maryland</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Mason Pan, a Computer Science undergraduate at the University of Maryland, College Park, with a keen interest in software engineering and data-driven business analytics.
+                         My journey in tech began with tutoring young learners in computer science fundamentals through Steel City Codes, where I developed a passion for sharing knowledge and working with code. 
+                         Currently, I'm expanding my expertise through courses in Business Analytics and Operations Management, complementing my technical foundation in programming languages like Python, Java, and C, along 
+                         with a strong grounding in algorithms and data structures. Outside the classroom, I’ve led the Blue Dolphins Swim Team as Head Coach, enhancing my leadership skills and dedication to teamwork. With hands-on experience 
+                         in tutoring, leadership, and competitive swimming, I’m always eager to apply my skills to challenging projects and collaborate with driven teams.</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience" class = "section">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets//checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>               
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets//checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>               
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects" class = "section">
+        <p class = "section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-1.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">To-Do List App</h2>
+                <p class="project-description">A console-based app in C that allows users to manage tasks 
+                    with options to add, view, complete, and delete tasks. Utilizes arrays, strings, and structs,
+                     with data persistence using CSV files.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/masonpan7/To-Do-Console-App'">
+                    GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/masonpan7/To-Do-Console-App'">
+                    Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-2.png" 
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+                <p class="project-description">A responsive, interactive portfolio website built using HTML, CSS, 
+                    and JavaScript. Features include fade-in animations as you scroll
+                     and a hamburger-style navigation menu for mobile. The site showcases personal projects and provides a
+                      seamless, user-friendly experience across devices.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/masonpan7/Portfolio-Website'">
+                    GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/masonpan7/Portfolio-Website'">
+                    Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-3.png" 
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Fitness App Data Analytics Case Study</h2>
+                <p class="project-description">Utilized R and SQL to clean, process, and analyze data efficiently.
+                    Analyzed trends in smart device usage using Fitbit data to provide actionable insights for 
+                    company's marketing and product strategies
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/masonpan7/Fitness-Tracker-App-Data-Analytics-Case-Study'">
+                    GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.kaggle.com/code/masonpan7/fitness-tracker-app-data-analytics-case-study'">
+                    Live Demo
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact" class="section">
+        <h1 class="title">Contact Me</h1>
+        <ul>
+            <li>Email: masonpan7@gmail.com</li>
+            <li>Phone: +1 908-655-1280</li>
+        </ul>
+        <div class="contact-container">
+          <form action="mailto:masonpan7@gmail.com" method="post" enctype="text/plain" class="contact-form">
+            <label for="yourName">Your Name:</label>
+            <input type="text" id="yourName" name="yourName"><br>
+      
+            <label for="yourEmail">Your Email:</label>
+            <input type="email" id="yourEmail" name="yourEmail"><br>
+      
+            <label for="yourMessage">Your Message:</label><br>
+            <textarea id="yourMessage" rows="10" cols="30" name="yourMessage"></textarea><br>
+      
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </section>
+      
+    <footer>
+        <nav>
+            <div class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mason Pan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>
